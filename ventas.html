@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ventas-container">
+        <button class="btn-volver" onclick="window.location.href='index.html'">⬅ Volver</button>
+        <h1>Ventas</h1>
+        
+        <div class="productos">
+            <div class="producto" onclick="seleccionarProducto(1)">
+                <h2>N°1</h2>
+                <img src="brown-eggs.jpg" alt="Huevo N°1">
+                <p>Huevo</p>
+                <span class="precio">$4000</span>
+            </div>
+            <div class="producto" onclick="seleccionarProducto(2)">
+                <h2>N°2</h2>
+                <img src="brown-eggs.jpg" alt="Huevo N°2">
+                <p>Huevo</p>
+                <span class="precio">$4500</span>
+            </div>
+            <div class="producto" onclick="seleccionarProducto(3)">
+                <h2>N°3</h2>
+                <img src="brown-eggs.jpg" alt="Huevo N°3">
+                <p>Huevo</p>
+                <span class="precio">$5000</span>
+            </div>
+            <div class="producto" onclick="seleccionarProducto(4)">
+                <h2>N°4</h2>
+                <img src="brown-eggs.jpg" alt="Huevo N°4">
+                <p>Huevo</p>
+                <span class="precio">$5500</span>
+            </div>
+        </div>
+
+        <div class="separador"></div>
+
+        <h2>Detalles de la Venta</h2>
+        <div id="detalle-venta"></div>
+        <h2>Total: $<span id="total">0</span></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
